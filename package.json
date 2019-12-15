@@ -2,7 +2,9 @@
   "name": "boilerplate-frontend-ssr",
   "description": "Boilerplate for frontend SSR project",
   "version": "1.0.0",
-  "private": true,
+  "engines": {
+    "node": "10.17.0"
+  },
   "scripts": {
     "dev": "nodemon server.js --watch",
     "build": "next build",
