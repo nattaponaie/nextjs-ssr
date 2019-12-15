@@ -1,0 +1,20 @@
+{
+  "email": "อีเมล์",
+  "emailFeedback": "กรุณาระบุอีเมล์",
+  "username": "ชื่อผู้ใช้",
+  "usernameFeedback": "กรุณาระบุชื่อผู้ใช้",
+  "password": "รหัสผ่าน",
+  "passwordFeedback": "กรุณาระบุรหัสผ่าน",
+  "passwordPolicyFeedback": "ต้องการ 8+ ตัวอักษร และต้องมีตัวพิมพ์เล็ก ตัวพิมพ์ใหญ่ ตัวเลข และสัญลักษณ์ อย่างน้อยอย่างละ 1 ตัว",
+  "repassword": "รหัสผ่านอีกครั้ง",
+  "repasswordFeedback": "รหัสผ่านทั้งสองไม่ตรงกัน",
+
+  "register": "ลงทะเบียน",
+  "alreadyUser": "หรือมีบัญชีซันเดย์แล้ว",
+  "login": "เข้าสู่ระบบ!",
+
+  "wrongEmailFormat": "อีเมล์ไม่ถูกต้อง",
+  "duplicatedEmail": "อีเมล์นี้มีผู้ใช้งานแล้ว",
+  "duplicatedUsername": "ชื่อผู้ใช้นี้มีผู้ใช้งานแล้ว",
+  "invalidRecaptchaToken": "คุณคือหุ่นยนต์ใช่ไหม?"
+}

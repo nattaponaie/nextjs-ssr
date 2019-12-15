@@ -1,0 +1,4 @@
+.get
+.cache
+docker-compose.yml
+node_modules

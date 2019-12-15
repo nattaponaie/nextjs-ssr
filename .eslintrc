@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "react-app"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "jest",
+    "react",
+    "react-hooks",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "eol-last": "error",
+    "import/no-absolute-path": "off",
+    "import/order": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "key-spacing": "error",
+    "no-trailing-spaces": "error",
+    "object-curly-newline": ["error", { "ImportDeclaration": { "multiline": true, "minProperties": 2 }}],
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "simple-import-sort/sort": "error",
+    "semi": "error",
+    "space-infix-ops": "error",
+    "sort-imports": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "/__mocks": "./__mocks__",
+        "/__tests": "./__tests__",
+        "/components": "./components",
+        "/contexts": "./contexts",
+        "/pages": "./pages",
+        "/static": "./static",
+        "/style": "./styles",
+        "/utils": "./utils",
+        "/config": "./config",
+        "/i18n": "./i18n"
+      }
+    }
+  }
+}

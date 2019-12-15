@@ -1,0 +1,13 @@
+{
+  "username": "Username",
+  "usernameFeedback": "Please input username",
+  "password": "Password",
+  "passwordFeedback": "Please input password",
+  "login": "Login",
+  "rememberMe": "Remember me",
+  "forgotPassword": "Forgot password?",
+  "or": "Or",
+  "registerNow": "register now!",
+
+  "loginFailedMsg": "Incorrect username or password, please try again"
+}

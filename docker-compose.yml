@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  boilerplate-frontend-ssr:
+    build: .
+    image: nextjs/boilerplate-frontend-ssr
+    command: yarn dev
+    volumes:
+      - "./__mocks__:/usr/src/app/__mocks__"
+      - "./__tests__:/usr/src/app/__tests__"
+      - "./components:/usr/src/app/components"
+      - "./contexts:/usr/src/app/contexts"
+      - "./pages:/usr/src/app/pages"
+      - "./static:/usr/src/app/static"
+      - "./styles:/usr/src/app/styles"
+      - "./utils:/usr/src/app/utils"
+    environment:
+      NODE_ENV: 'development'
+      PORT: 3000
+      ASSET_PREFIX: ''
+    ports:
+      - "3000:3000"

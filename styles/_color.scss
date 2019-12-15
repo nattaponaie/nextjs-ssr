@@ -1,0 +1,38 @@
+// CI Guideline:
+//   Primary color will be mainly used.
+//   Shading colors are the alternative that can be used as needed.
+
+// Orange shade
+$color-carrot-orange: #FA4616;  // Primary orange color
+$color-carrot-orange-shade1: #FB8C6D;  // Secondary orange color 1 e.g. Illustration.
+$color-carrot-orange-shade2: #FE714B;  // Secondary orange color 2 e.g. Background.
+$color-carrot-orange-shade3: #FB5F35;  // Primary CTA color e.g. Button, highlighted titles, focused text fields.
+
+// Green shade
+$color-emerald-green: #009B77;  // Primary green color.
+$color-emerald-green-shade1: #53D0B3;  // Illustration.
+$color-emerald-green-shade2: #11A986;  // Highlight, interactable control (toggle button, slider, icon); Hypertext; Selected option/control; Success message.
+$color-emerald-green-shade3: #008B77;
+
+// Yellow shade
+$color-sunny-yellow: #FFD038;  // Primary yellow color Alert and error in icons and graphic elements.
+$color-sunny-yellow-shade1: #FFD758;  // Background.
+$color-sunny-yellow-shade3: #F5BB00;  // Alert and error texts.
+
+// Spring teal shade
+$color-spring-teal: #2DCCD3;  // Primary spring teal color.
+$color-spring-teal-shade1: #59D5DE;  // Illustration.
+$color-spring-teal-shade2: #00C1CD;  // Highlighted title.
+
+// 50 Shades of Grey
+$color-pebble-grey: #696969;  // Primary text.
+$color-pebble-grey70: rgba(105, 105, 105, 0.7);  // Secondary text.
+$color-pebble-grey40: rgba(105, 105, 105, 0.4);  // Borders for users' inputs such as text field and selection choice; hint texts.
+$color-pebble-grey20: rgba(105, 105, 105, 0.2);  // Divider and borders.
+$color-dark-grey: #4A4A4A; // Body text.
+$color-warm-grey: #FAF9F7;  // Background.
+$color-warm-grey-shade1: #EDEAE4;  // Border of large elements.
+$color-warm-grey-shade2: #E3D9D6;  // Icons.
+$color-warm-grey-shade3: #948B88;  // Icons and Backgrounds.
+
+$color-white: #FFFFFF;
