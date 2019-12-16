@@ -58,8 +58,7 @@
         "/static": "./static",
         "/style": "./styles",
         "/utils": "./utils",
-        "/config": "./config",
-        "/i18n": "./i18n"
+        "/web-config": "./web-config"
       }
     }
   }

@@ -4,27 +4,17 @@ import {
   element,
 } from 'prop-types';
 
-import UserInfo from '/components/Auth/UserInfo';
-import LanguageSwitcher from '/components/LanguageSwitcher';
-import MainMenu from '/components/MainMenu/MainMenu';
-import {
-  ASSET_PREFIX,
-  DEV_MODE,
-} from '/config';
-import { useTranslation } from '/i18n';
-
-import style from './Layout.scss';
+import { ASSET_PREFIX } from '/web-config';
 
 const Layout = ({
   children,
   allowAnonymous,
 }) => {
-  const { t, i18n } = useTranslation('common');
 
   return (
-    <div className={style[`lang${(i18n.language || i18n.options.defaultLanguage).toUpperCase()}`]}>
+    <div>
       <Head>
-        <title>{t('title')}</title>
+        <title>Line LIFF</title>
 
         <link rel="shortcut icon" href={`${ASSET_PREFIX}/static/favicon.png`} />
         <link rel="icon" type="image/png" href={`${ASSET_PREFIX}/static/favicon.png`} />
@@ -32,22 +22,14 @@ const Layout = ({
 
         <link rel="apple-touch-icon" href={`${ASSET_PREFIX}/static/favicon.png`} />
         <meta name="theme-color" content="#FA4616" />
-        <meta name="apple-mobile-web-app-title" content={t('title')} />
+        <meta name="apple-mobile-web-app-title" content="Line LIFF" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
+
+        <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js" />
       </Head>
-      <header>
-        <div className={style.header}>
-          <div className={style.headerLeftItem}>
-            {allowAnonymous || <MainMenu />}
-          </div>
-          <div>
-            <LanguageSwitcher className={style.headerRightItem} />
-            {allowAnonymous || <UserInfo className={style.headerRightItem} />}
-          </div>
-        </div>
-      </header>
+      <header />
       {children}
       <footer>
         {/* {'Footer'} */}

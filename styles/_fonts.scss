@@ -1,6 +1,14 @@
 $font-family-en: 'Lato';
 $font-family-th: 'SukhumvitTadmai';
 
+@font-face {
+  font-family: 'Sukhumvit Tadmai';
+  src: url('/static/SukhumvitTadmai/ttf/SukhumvitTadmai_Tex.ttf');
+}
+* {
+  font-family: Sukhumvit Tadmai, Sukhumvit Set, Roboto;
+}
+
 .langEN {
   font-family: $font-family-en;
 }
