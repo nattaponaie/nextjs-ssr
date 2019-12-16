@@ -1,1 +1,1 @@
-web: node ./server/index.js
+web: node .next/dist/index.js
