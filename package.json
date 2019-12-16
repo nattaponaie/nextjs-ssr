@@ -5,6 +5,7 @@
   "engines": {
     "node": "10.17.0"
   },
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "nodemon --exec babel-node --presets @babel/preset-env server/index.js --watch",
     "build": "next build && babel server/index.js -D -d .next/dist && babel utils/ -D -d .next/utils && cp package.json .next/.",
