@@ -6,9 +6,9 @@
     "node": "10.17.0"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node --presets @babel/preset-env server.js --watch",
-    "build": "next build && babel server.js -D -d .next/dist && babel utils/ -D -d .next/utils && cp package.json .next/.",
-    "start": "node .next/dist/server.js",
+    "dev": "nodemon --exec babel-node --presets @babel/preset-env server/index.js --watch",
+    "build": "next build && babel server/index.js -D -d .next/dist && babel utils/ -D -d .next/utils && cp package.json .next/.",
+    "start": "node .next/dist/index.js",
     "test": "jest __tests__ --coverage --forceExit --detectOpenHandles",
     "test:watch": "jest __tests__ --watch --detectOpenHandles",
     "lint": "eslint",
