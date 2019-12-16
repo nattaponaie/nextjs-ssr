@@ -12,9 +12,8 @@ import nextjs from 'next';
 //   NODE_ENV, PORT,
 // } from './server-config';
 
-const port = parseInt(3001, 10) || 8080;
-// const dev = NODE_ENV === 'development';
-const dev = true;
+const port = parseInt(process.env.PORT, 10) || 3000;
+const dev = process.env.NODE_ENV === 'development';
 const app = nextjs({ dev });
 const handle = app.getRequestHandler();
 const server = express();
